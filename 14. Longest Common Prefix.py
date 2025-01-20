@@ -1,9 +1,7 @@
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
-        p_leng=0
         shortestString = min(strs, key=len)
         longestPrefix = strs[0][:len(shortestString)]
-        # print(shortestString)
         p_leng = 0
 
         for i in range(len(shortestString)):
